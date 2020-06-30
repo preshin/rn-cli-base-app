@@ -34,8 +34,8 @@ const Main = (props) => {
           // textContent={"Loading..."}
           textStyle={styles.spinnerTextStyle}
         />
-        {isAuthenticated && <LoginStackNavigator />}
-        {!isAuthenticated && <AppDrawerNavigator />}
+        {!isAuthenticated && <LoginStackNavigator />}
+        {isAuthenticated && <AppDrawerNavigator />}
       </Fragment>
     </ThemeProvider>
   );
